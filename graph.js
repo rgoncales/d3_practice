@@ -1,12 +1,12 @@
 const MAX_SEED = 10
-const MIN_SEED = -10
+const MIN_SEED = 0
 const DEFAULT_SEED = 5
 const X_AXIS = 'abcdefghijklmnopqrstuvwxyz'
 const Y_AXIS = [-10, 90]
 
 function getRandomInt(max) {
   const maxY = 10
-  return Math.floor(Math.random() * maxY * Math.abs(max)) - 10
+  return Math.floor(Math.random() * maxY * max) - 10
 }
 
 // generates data based on a given seed

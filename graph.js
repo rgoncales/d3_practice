@@ -55,7 +55,7 @@ var xScale = d3
 container
   .append('g')
   .attr('transform', 'translate(0,' + yScale(0) + ')')
-  .call(d3.axisBottom(xScale))
+  .call(d3.axisBottom(xScale).tickValues(''))
 
 // bar functions
 function getBarHeight(value) {
